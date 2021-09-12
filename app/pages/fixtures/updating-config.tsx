@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Formik, Form, useField, useFormikState, FormikState, useFormikConfig, FieldConfig } from 'formik';
+import { Formik, Form, useField, useFormikState, FormikState, useFormikConfig, FieldHookConfig } from 'formik';
 import { DebugProps } from 'app/components/debugging/DebugProps';
 
-const Input = React.memo((p: FieldConfig<string>) => {
+const Input = React.memo((p: FieldHookConfig<string>) => {
   const [field, meta] = useField(p);
 
   const renders = React.useRef(0);
