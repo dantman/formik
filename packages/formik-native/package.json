@@ -1,6 +1,6 @@
 {
-  "name": "formik-native",
-  "version": "2.1.17",
+  "name": "@johnrom/formik-native",
+  "version": "3.0.0-native2",
   "license": "Apache-2.0",
   "author": "Jared Palmer <jared@palmer.net>",
   "repository": "formium/formik",
@@ -23,14 +23,13 @@
     "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
     "test": "tsdx test",
-    "lint": "tsdx lint",
-    "prepublish": "npm run build"
+    "lint": "tsdx lint"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "formik": "2.2.9"
+    "@johnrom/formik-v3": "3.0.0-native2"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^0.0.5",
