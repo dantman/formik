@@ -210,8 +210,8 @@ export interface FormikStateHelpers<Values> {
   /** Get Formik State from outside of Render. */
   getState: GetStateFn<Values>;
   /** Use Formik State from within Render. */
-  useState: <Return>(
-    selector: Selector<FormikState<Values>, Return>,
+  useState: <Return = FormikState<Values>>(
+    selector?: Selector<FormikState<Values>, Return>,
     comparer?: Comparer<Return>,
     shouldSubscribe?: boolean
   ) => Return;
