@@ -1,7 +1,7 @@
 {
   "name": "@johnrom/formik-v3",
   "description": "Build forms in React, without the tears",
-  "version": "3.0.0-rc2",
+  "version": "3.0.0-rc3",
   "license": "Apache-2.0",
   "author": "Jared Palmer <jared@palmer.net> (https://jaredpalmer.com)",
   "repository": "formium/formik",
@@ -57,8 +57,7 @@
     "move-native": "mv dist/index.js dist/index.native.js",
     "build-alternate": "yarn run tsdx build --tsconfig tsconfig.build.json --noClean --entry src/index.alternate.tsx --name formik-v3.alternate",
     "move-alternate": "mv dist/index.js dist/index.alternate.js",
-    "build-web": "yarn run tsdx build --tsconfig tsconfig.build.json --noClean",
-    "prepublish": "yarn build"
+    "build-web": "yarn run tsdx build --tsconfig tsconfig.build.json --noClean"
   },
   "dependencies": {
     "deepmerge": "^2.1.1",
